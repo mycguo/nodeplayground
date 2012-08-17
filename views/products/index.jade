@@ -1,0 +1,11 @@
+h1 Products:
+
+- each product in products
+  h2 Name #{product.name} 
+  p Description #{product.description} 
+  p Price #{product.price} 
+  p 
+    a(href='/products/'+product.id) Details
+
+p
+    a(href='/products/new') New

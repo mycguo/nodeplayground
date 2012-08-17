@@ -1,0 +1,8 @@
+h1 New Photo
+form(action='/photos', method='POST', enctype='multipart/form-data')
+  p
+    label(for='photo') Photo:
+  p  
+    input(type="file",name='photo', id='photo')
+  p
+    input(type='submit')

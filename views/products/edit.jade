@@ -1,0 +1,15 @@
+h1 Editing #{product.name}
+form(action='/products/'+ product.id, method='POST') 
+  input(type='hidden',name='_method',value='PUT')
+  p
+    label(for='product_name') Name:
+    input(type='text',id='product_name',name='product_name', value=product.name)
+  p
+    label(for='product_description') Description:
+    textarea(id='product_description',name='product_description')= product.description
+  p
+    label(for='product_price') Price:
+    input(type='text',id='product_price',name='product_price', value=product.price)
+ 
+  p
+    input(type='submit')
